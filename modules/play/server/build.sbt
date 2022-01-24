@@ -9,6 +9,8 @@ libraryDependencies ++= playDependencies ++ Seq(
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test,
   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
   "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
+  "com.typesafe.akka" %% "akka-protobuf" % akkaVersion % Test,
+  "com.typesafe.akka" %% "akka-slf4j" % akkaVersion % Test,
   "org.awaitility" % "awaitility" % "4.0.1" % Test
 )
 
