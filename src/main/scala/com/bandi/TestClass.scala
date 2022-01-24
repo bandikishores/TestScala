@@ -1,8 +1,6 @@
-package bandi
+package com.bandi
 
 object TestClass {
-
- 
 
   case class Employee(var name: String, var invokedCount: Int = 0) {
     def apply(name: String, invokedCount: Int = 0) = {
@@ -26,7 +24,7 @@ object TestClass {
     }
   }
 
-   object Singleton {
+  object Singleton {
     def printValue() {
       println("printValue invoked")
     }
@@ -65,27 +63,26 @@ object TestClass {
     //    println(myStr)
     //  })
 
-    4.times(println("Hello, world!"))
+    4 times println("Hello, world!")
     var emp = Employee("kishore", 0)
-    emp times (printf("Times invoked %d\n", emp.invokedCount))
+    emp times printf("Times invoked %d\n", emp.invokedCount)
 
     // Singleton
     var singletonObject = Singleton(emp)
     singletonObject match {
-      case Singleton(value) => { 
-      println("Value saved in Singleton " + value)
+      case Singleton(value) => {
+        println("Value saved in Singleton " + value)
+      }
+      case _ => println("Could not resolve")
     }
-      case _                => println("Could not resolve")
-    }
-
 
     emp = Employee("kishore", 1)
     singletonObject = Singleton(emp)
     singletonObject match {
-      case Singleton(value) => { 
-      println("Value saved in Singleton " + value)
-    }
-      case _                => println("Could not resolve")
+      case Singleton(value) => {
+        println("Value saved in Singleton " + value)
+      }
+      case _ => println("Could not resolve")
     }
 
     // val numList = List(1,2,3,4,5,6);

@@ -1,0 +1,10 @@
+-J-Xms2048m
+-J-Xmx4096m
+-J-Xss8m
+-J-XX:ReservedCodeCacheSize=256m
+-J-XX:MaxMetaspaceSize=2048m
+-J-XX:+UseG1GC
+-J-XX:MaxGCPauseMillis=200
+-Dpackaging.type=jar
+-Dsbt.classloader.close=false
+-Dsbt.io.implicit.relative.glob.conversion=allow
