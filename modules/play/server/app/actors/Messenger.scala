@@ -22,6 +22,7 @@ class Messenger(clientActorRef: ActorRef) extends Actor {
       clientActorRef ! json
       Thread.sleep(1000)
       clientActorRef ! Json.parse(s"""{"body": "This is Additional Message for Original Message ‘$clientMessage’"}""")
+      logger.info("Done responding")
   }
 
   // parse the "message" field from the json the client sends us

@@ -17,3 +17,6 @@ To run the main code (sample main program), run `sbt run`
 6) For WebSocket is running at http://localhost:9001/chat
 7) To Run WebSocket client with a Test
    1) `WebSocketControllerSpec`
+8) Logs can be accessed at 
+   1) tail -f ./modules/play/server/logs/application.log
+9) 
